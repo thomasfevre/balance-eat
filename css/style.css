@@ -23,7 +23,7 @@ h2 {
 h2::after {
 	position: absolute;
 	content: "";
-	background: #d43031;
+	background: #8eb640;
 	height: 2px;
 	width: 70px;
 	bottom: 0;
@@ -89,7 +89,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	text-align: center;
 }
 #menu {
-	padding: 20px;
+	padding: 10px;
 	transition: all 0.8s;
 }
 #menu.navbar-default {
@@ -107,23 +107,23 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin: 0 40px 0 40px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color: #d43031;
+	color: #8eb640;
 }
 .on {
-	background-color: #262626 !important;
+	background-color: whitesmoke !important;
 	padding: 0 !important;
-	padding: 10px 0 !important;
+	padding: 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #d43031 !important;
+	color: #8eb640 !important;
 	background-color: transparent;
 }
 .navbar-toggle {
 	border-radius: 0;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #d43031;
-	border-color: #d43031;
+	background-color: #8eb640;
+	border-color: #8eb640;
 }
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #FFF;
@@ -146,23 +146,35 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-bottom: 40px;
 }
 .btn-custom {
-	text-transform: uppercase;
-	color: #777;
-	background-color: transparent;
-	border: 2px solid #777;
-	padding: 14px 20px;
-	margin: 0;
-	font-size: 15px;
-	font-weight: 500;
-	letter-spacing: 0.5px;
-	border-radius: 0;
-	margin-top: 20px;
-	transition: all 0.3s;
+    background-color:  whitesmoke; /* For the first button */
+    border: 2px solid whitesmoke; /* Green border */
+    color: black; /* Text color */
+    padding: 10px 20px; /* Adjust padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    text-transform: uppercase; /* Uppercase text */
+    transition: all 0.3s; /* Smooth transition */
+    margin-right: 10px; /* Space between buttons */
 }
-.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
-	color: #ddd;
-	border: 2px solid #d43031;
-	background-color: #d43031;
+
+.btn-custom:hover {
+    background-color: #8eb640; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+.btn-secondary {
+    background-color: transparent; /* Background color for the second button */
+    border: 2px solid whitesmoke; /* No border */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    text-transform: uppercase; /* Uppercase text */
+    transition: all 0.3s; /* Smooth transition */
+}
+
+.btn-secondary:hover {
+    background-color: whitesmoke; /* Darker shade on hover */
 }
 /* Header Section */
 .intro {
@@ -345,7 +357,7 @@ header .intro-text {
 #contact h3::after {
 	position: absolute;
 	content: "";
-	background: #d43031;
+	background: #8eb640;
 	height: 2px;
 	width: 40px;
 	bottom: 0;
@@ -443,4 +455,18 @@ color: #999;
 #container-custom {
 	padding-left: 25vw;
 	padding-right: 25vw;
+}
+
+.store-image {
+    width: 100%; /* Make the image take the full width of its container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+    margin-bottom: 15px; /* Space below the image */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.store-image:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
 }
